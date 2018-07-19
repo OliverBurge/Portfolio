@@ -4,10 +4,13 @@ class PortfoliosController < ApplicationController
 		@portfolio_items = Portfolio.all
 	end
 	def new
-		@portfolio_item = Portfolio.new
+		@portfolio_items = Portfolio.new
+	end
+	def edit
+		@portfolio_items = Portfolio.find(params[:id])
 	end
   def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title,:subtitle, :body))
+    @portfolio_items = Portfolio.new(params.require(:portfolio).permit(:title,:subtitle, :body))
 
     respond_to do |format|
       if @portfolio_item.save
@@ -16,6 +19,8 @@ class PortfoliosController < ApplicationController
         format.html { render :new }
       end
     end
-  end
+ end
 end	
+
+	
 
