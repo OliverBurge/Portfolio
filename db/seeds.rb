@@ -51,4 +51,8 @@ end
 		)
 end
 
-
+3.times do |technology|
+	Portfolio.last.technologies.create!(
+		name: "Technology #{technology}"
+		)
+end
