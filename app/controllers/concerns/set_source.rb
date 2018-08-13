@@ -1,6 +1,9 @@
 module SetSource
 	extend ActiveSupport::Concern
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 	included do 
 		before_action :set_source
 	end
