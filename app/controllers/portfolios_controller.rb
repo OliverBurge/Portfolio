@@ -1,5 +1,5 @@
 class PortfoliosController < ApplicationController
-
+  layout 'portfolio'
   def show
     @portfolio_items = Portfolio.find(params[:id])
   end
