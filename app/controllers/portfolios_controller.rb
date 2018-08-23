@@ -1,5 +1,7 @@
 class PortfoliosController < ApplicationController
   layout 'portfolio'
+  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+
   def show
     @portfolio_items = Portfolio.find(params[:id])
   end
