@@ -13,21 +13,18 @@
   </head>
 
   <body>
-<!-- start of Nav -->
-    <%= render 'shared/portfolio_nav' %>
-    
-<!-- end of nav -->
-  
-<!-- start of masthead -->
-    <%= render 'shared/portfolio_masthead' %>
 
-<!-- end of masthead -->
+    <%= render 'shared/portfolio_nav' %>
+
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+
+
     <%= render 'shared/nav', location: 'top' %>
 
     <%= yield %>
-  <!-- start of footer -->
+
     <%= render 'shared/portfolio_footer' %>
-    <!-- end of footer -->
+
     <%= source_helper("application") %>
   </body>
 </html>
