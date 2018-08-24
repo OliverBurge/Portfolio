@@ -18,9 +18,6 @@
 
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
-
-    <%= render 'shared/nav', location: 'top' %>
-
     <%= yield %>
 
     <%= render 'shared/portfolio_footer' %>
