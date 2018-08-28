@@ -11,8 +11,8 @@ class PortfoliosController < ApplicationController
   end
 
 	def index
-		@portfolio_items = Portfolio.all
-    @page_title = "My Portofolio Page"
+		@portfolio_items = Portfolio.by_position
+
 	end
 
 	def new
