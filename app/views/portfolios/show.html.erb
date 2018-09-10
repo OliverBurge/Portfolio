@@ -1,20 +1,20 @@
 <div class="container portfolio-container">
 	<div class="row">
 		<div class="col-md-7">
-			<%= image_tag @portfolio_items.main_image, class: "img-fluid", width: '100%' %>
+			<%= image_tag portfolio_img(@portfolio_item.thumb_image.url, 'main'), width: '100%' %>
 		</div>
 		<div class="col-md-5">
-			<h1><%= @portfolio_items.title %></h1>
+			<h1><%= @portfolio_item.title %></h1>
 
-			<em><% @portfolio_items.subtitle %></em>
+			<em><% @portfolio_item.subtitle %></em>
 
-			<p><%= @portfolio_items.body %></p>
+			<p><%= @portfolio_item.body %></p>
 
 			<hr>
 
 			<h3>Technologies Used:</h3>
 
-			<% @portfolio_items.technologies.each do |t| %>
+			<% @portfolio_item.technologies.each do |t| %>
 			<p><%= t.name %></p>
 			<% end %>
 
