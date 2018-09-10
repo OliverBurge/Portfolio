@@ -31,7 +31,7 @@ body {
   height: 100%;
 }
 body {
-  color: #fff;
+  color: black;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
@@ -204,7 +204,7 @@ body {
 }
 
 .app-footer {
-  color: white;
+  color: black;
 }
 
 /*
@@ -509,3 +509,20 @@ Animate.css
     opacity: 0;
   }
 }
+
+.typed-cursor {
+        opacity: 1;
+        animation: blink .7s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }

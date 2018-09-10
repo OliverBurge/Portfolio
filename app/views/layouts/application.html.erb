@@ -6,6 +6,7 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,6 +17,9 @@
   <!-- or -->
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Quicksand');
+  </style>
 </head>
   </head>
 
@@ -23,7 +27,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-
+          
           <%= video_tag(
             'HardDrivePhotojpeg.mp4',
             id: 'background',
@@ -32,6 +36,7 @@
             muted: true,
             poster:''
             ) %>
+
 
           <%= render "shared/application_nav" %>
 
