@@ -19,5 +19,9 @@
 			<% end %>
 
 		</div>
+		<% if session[:user] = :site_admin %>
+			<%= link_to "Edit", edit_portfolio_path %>
+		<% end %>
 	</div>
 </div>
+
