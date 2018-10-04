@@ -20,12 +20,11 @@ class PortfoliosController < ApplicationController
   end
 
 	def index
-		@portfolio_items = Portfolio.by_position
-
+    @portfolio_items = Portfolio.by_position
 	end
 
 	def new
-		@portfolio_items = Portfolio.new
+    @portfolio_items = Portfolio.new
     3.times { @portfolio_items.technologies.build }
 	end
 
