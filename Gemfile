@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -67,3 +67,4 @@ gem 'mini_magick', '~> 4.8'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.5'
 gem 'redis', '~> 4.0', '>= 4.0.2'
+gem 'coffee-script-source', '~> 1.12', '>= 1.12.2'

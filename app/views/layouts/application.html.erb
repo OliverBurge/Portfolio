@@ -9,18 +9,15 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <head>
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <!-- or -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Quicksand');
-  </style>
-</head>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Quicksand');
+    </style>
   </head>
 
   <body>
@@ -28,15 +25,14 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
           
-          <%= video_tag(
+            <%= video_tag(
             'HardDrivePhotojpeg.mp4',
             id: 'background',
             autoplay: true,
             loop: true,
             muted: true,
             poster:''
-            ) %>
-
+            ) %> 
 
           <%= render "shared/application_nav" %>
 
