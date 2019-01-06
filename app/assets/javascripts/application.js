@@ -20,4 +20,6 @@
 //= require activestorage
 //= require html.sortable
 //= require turbolinks
+//= require particles.min
 //= require_tree .
+
